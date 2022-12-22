@@ -12,12 +12,6 @@ def prettify(path, file, format):
     os.chdir(path)
     list1 = os.listdir(path)
     count = 1
-    # With
-    # the “With” statement, you
-    # get
-    # better
-    # syntax and exception
-    # handling.
     # with open(file) as f:
     f = open(file, "r")
     content = f.read().split("\n")
@@ -38,10 +32,4 @@ def prettify(path, file, format):
 # file_format = input("Enter the file format :: ")
 prettify(r"C:\Users\HP\PycharmProjects\pythonProject",
          r"C:\Users\HP\PycharmProjects\pythonProject\content", ".png")
-# In the above code, you can observe that we have opened the output.txt file using the with open statement. The
-# statement returns a file pointer that is assigned to the variable “file”. Now, we can perform any operation on the
-# file object inside the context of the with statement. Once all the statements are executed and the execution
-# reaches the end of the with context block, the file is automatically closed by the python interpreter. Also,
-# if the program runs into any exception inside the with block, the with open context in python closes the file
-# before terminating the program. In this way the data inside the file remains safe even if the program is terminated
-# abruptly.
+
